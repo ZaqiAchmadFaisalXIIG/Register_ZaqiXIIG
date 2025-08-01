@@ -1,0 +1,60 @@
+<DOCTYPE html>
+<html>
+    <head>
+        Zaqi Achmad Faisal
+    </head>
+    <body>
+        <h1>Register</h1>
+        <div> Class</div>
+        <form class=""action="">
+            <input type="text" name="" id="nama" value="" placeholder="Nama Lengkap" /><br />
+            <input type="email" name="" id="email" value="" placeholder="Email" /><br />
+            <input type="password" name="" id="password" value="" placeholder="Password" /><br />
+            <input type="number" name="" id="nomor hp" value="" placeholder="Nomor HP" /><br />
+            <input type="date" name="" id="data" value="" placeholder="Tanggal Lahir" /><br />
+            
+            
+            <!--<label>Jenis Kelamin :</label>-->
+            <!--<div class="checkbox-group">-->
+            <!--    <input type="checkbox" id"setuju" required />-->
+            <!--    <label for="setuju">Anda menyetujui Syarat dan Ketentuan</label>-->
+            <!--</div>-->
+            <button type="submit" style="color: green">Submit</button>
+        </form>
+    </div>
+ 
+    
+    <tabel id="dataTabel" style="border: 1px solid #ccc">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Tanggal</th>
+                <th>Jenis Kelamin</th>
+            </tr>
+    </thead>
+    </tabel>
+    
+    <script>
+        document.getElemenById("registerForm").addEventListener(" it", function(e){
+            e.preventDefault(): // Mencegah refresh halaman
+            
+            const nama = document.getElementById("nama").value;
+            const email = document.getElementById("email").value;
+            const tanggal = document.getElementById("tanggal").value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+        
+            const tabel = document.getElementById("dataTable").getElementById("tbody")
+            const newflow = table.insertRow():
+            
+            newRow.insertRowCell(0).textContent = nama:
+            newRow.insertRowCell(1).textContent = email:
+            newRow.insertRowCell(2).textContent = tanggal:
+            newRow.insertRowCell(3).textContent = gender:
+            
+            document.getElemenById("registerForm").reset():
+        }):
+    </script>
+    </body>
+</html>
+</DOCTYPE>
